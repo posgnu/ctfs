@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/joint.css" />
+    <script src="/jquery.js"></script>
+    <script src="/lodash.js"></script>
+    <script src="/static/backbone/backbone.js"></script>
+    <script src="/dagre.min.js"></script>
+    <script src="/graphlib.min.js"></script>
+    <script src="/joint.js"></script>
+</head>
+<style>
+#paper-html-elements {
+    position: relative;
+    border: 1px solid gray;
+    display: inline-block;
+    background: transparent;
+    overflow: hidden;
+}
+#paper-html-elements svg {
+    background: transparent;
+}
+#paper-html-elements svg .link {
+    z-index: 2;
+}
+.html-element {
+    position: absolute;
+    /* Make sure events are propagated to the JointJS element so, e.g. dragging works.*/
+    pointer-events: none;
+    -webkit-user-select: none;
+    border: 2px solid #2980B9;
+    padding: 5px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.html-element select,
+.html-element input,
+.html-element a {
+    /* Enable interacting with inputs only. */
+    pointer-events: auto;
+}
+.html-element input {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    color: #333;
+}
+</style>
+<body>
+  <div id="paper-html-elements"></div>
+
+<script>
+var a = localStorage.getItem('a');
+if (a === null) {
+  a = {};
+}else {
+  a = JSON.parse(a);
+}
+function store(k, v) {
+  a[k] = v;
+  localStorage.setItem('a', JSON.stringify(a));
+}
+
+var search = location.search.replace('?','') || 'addr=0';
+
+
+//
+fetch('/go?'+search).then(function(response) {
+    return response.json();
+  })
+  .then(draw)
+  .catch(function(error) { console.log(error); });
+
+
+function draw(sub_blocks) {
+  var d = {};
+  var cells = [];
+  for (var i = 0; i < sub_blocks.length; i++) {
+    var b = sub_blocks[i];
+    var e = createBlcok(b, i);
+    d[b.entry] = e;
+    cells.push(e);
+  }
+
+  for (var i = 0; i < sub_blocks.length; i++) {
+    var b = sub_blocks[i];
+    for (var j = 0; j < b.links.length; j++) {
+      var l = b.links[j];
+      var el = createLink(b.entry, l, d);
+      cells.push(el);
+    }
+  }
+  graph.resetCells(cells);
+  joint.layout.DirectedGraph.layout(graph, { setLinkVertices: false });
+}
+
+function createLink(source, target, dict){
+  return new joint.dia.Link({
+      source: { id: dict[source].id },
+      target: { id: dict[target.addr].id },
+      attrs: {  '.connection': { stroke: target.color }, '.marker-target': { d: 'M 4 0 L 0 2 L 4 4 z' } },
+      smooth: true
+  });
+}
+
+
+function createBlcok(block, i) {
+  return new joint.shapes.html.Element({
+      size: { width: 300, height: block.insts.length * 19 + 24 },
+      label: block.name,
+      disass: block.insts.map((i)=>createCode(i,block)).join('\n')
+  });
+}
+
+function createCode(inst){
+  var t = `<div style="font-family:monospace">
+    ${inst.addr_pad}:
+    <span style='display:inline-block;width:40px'>${inst.asm}</span>
+    <span>${inst.op_text}</span>
+  </div>`;
+  if(inst.code_deref) {
+    return `<a href="?addr=${inst.code_deref}" style="cusor:pointer">${t}</a>`;
+  } else {
+    return t;
+  }
+
+}
+
+var graph;
+var paper;
+
+(function() {
+
+    graph = new joint.dia.Graph;
+
+    paper = new joint.dia.Paper({ el: $('#paper-html-elements'), width: 3000, height: 3000, gridSize: 1, model: graph });
+
+// Create a custom element.
+// ------------------------
+
+    joint.shapes.html = {};
+    joint.shapes.html.Element = joint.shapes.basic.Rect.extend({
+        defaults: joint.util.deepSupplement({
+            type: 'html.Element',
+            attrs: {
+                rect: { stroke: 'none', 'fill-opacity': 0 }
+            }
+        }, joint.shapes.basic.Rect.prototype.defaults)
+    });
+
+// Create a custom view for that element that displays an HTML div above it.
+// -------------------------------------------------------------------------
+
+    joint.shapes.html.ElementView = joint.dia.ElementView.extend({
+
+        template: [
+            '<div class="html-element">',
+            '<label></label>',
+            '<div class="disass"></div>',
+            '</div>'
+        ].join(''),
+
+        initialize: function() {
+            _.bindAll(this, 'updateBox');
+            joint.dia.ElementView.prototype.initialize.apply(this, arguments);
+
+            this.$box = $(_.template(this.template)());
+            // Prevent paper from handling pointerdown.
+            this.$box.find('a').on('mousedown click', function(evt) {
+                evt.stopPropagation();
+            });
+            // This is an example of reacting on the input change and storing the input data in the cell model.
+            // Update the box position whenever the underlying model changes.
+            this.model.on('change', this.updateBox, this);
+            // Remove the box when the model gets removed from the graph.
+            this.model.on('remove', this.removeBox, this);
+
+            this.updateBox();
+        },
+        render: function() {
+            joint.dia.ElementView.prototype.render.apply(this, arguments);
+            this.paper.$el.prepend(this.$box);
+            this.updateBox();
+            return this;
+        },
+        updateBox: function() {
+            // Set the position and dimension of the box so that it covers the JointJS element.
+            var bbox = this.model.getBBox();
+            // Example of updating the HTML with a data stored in the cell model.
+            this.$box.find('label').text(this.model.get('label'));
+            this.$box.find('.disass').html(this.model.get('disass'));
+            this.$box.css({
+                width: bbox.width,
+                height: bbox.height,
+                left: bbox.x,
+                top: bbox.y,
+                transform: 'rotate(' + (this.model.get('angle') || 0) + 'deg)'
+            });
+        },
+        removeBox: function(evt) {
+            this.$box.remove();
+        }
+    });
+
+// Create JointJS elements and add them to the graph as usual.
+// -----------------------------------------------------------
+
+
+}())
+
+</script>
+
+</html>
