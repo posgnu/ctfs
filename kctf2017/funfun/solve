@@ -1,0 +1,11 @@
+['A', 'S', 'G', 'M', 'T', '@', '@', 'U', 'M', '[', '9']
+>>> key = list(key)
+>>> for i in range(0,11):
+...     if i % 2 == 0:
+...             key[i] = chr(ord(key[i]) +2 + (2 * i))
+...     else:
+...             key[i] = chr(ord(key[i]) -2 - (2 * i))
+... 
+>>> key
+['C', 'O', 'M', 'E', '^', '4', 'N', 'E', '_', 'G', 'O']
+
