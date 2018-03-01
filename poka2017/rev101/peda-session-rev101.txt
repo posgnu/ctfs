@@ -1,3 +1,2 @@
-break *0x400665
-
+break *ptrace
 
