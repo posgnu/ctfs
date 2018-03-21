@@ -26,3 +26,6 @@ final = ex.found[0]
 flag = final.posix.dumps(1)
 
 print("Flag: {0}".format(final.posix.dumps(1)))
+
+import code
+code.interact(local=locals())

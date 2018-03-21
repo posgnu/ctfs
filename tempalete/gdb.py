@@ -38,4 +38,6 @@ while curr_pos != 100:
 			count = 0
 			break
 		count = 0
-			
+
+import code
+code.interact(local=locals())
