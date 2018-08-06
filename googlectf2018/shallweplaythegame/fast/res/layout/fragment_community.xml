@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#fff9f9f9" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff161616" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/community_content1" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/interest_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_76px" n1:text="@string/interest" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ffbbbbbb" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <LinearLayout n1:orientation="horizontal" n1:background="#ffe9974c" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <EditText n1:textSize="@dimen/font_45px" n1:id="@id/search_edittext" n1:background="#ffffffff" n1:padding="8.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_margin="8.0dip" n1:layout_weight="1.0" n1:inputType="text" n1:imeOptions="actionSearch" />
+        <LinearLayout n1:gravity="center" n1:layout_gravity="center" n1:layout_width="50.0dip" n1:layout_height="wrap_content">
+            <ImageView n1:layout_gravity="center" n1:id="@id/search_ibtn" n1:background="#00000000" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:src="@drawable/newsfeed_search" />
+        </LinearLayout>
+    </LinearLayout>
+    <View n1:background="#ffbbbbbb" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+    <ListView n1:id="@android:id/list" n1:background="#ffffffff" n1:focusable="false" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:drawSelectorOnTop="false" n1:divider="#ffbbbbbb" n1:dividerHeight="0.5dip" />
+</LinearLayout>

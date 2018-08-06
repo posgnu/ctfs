@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="3.0dip" n1:paddingRight="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mikhaellopez.circularimageview.CircularImageView n1:layout_gravity="center_vertical" n1:id="@id/logo_iv" n1:layout_width="43.0dip" n1:layout_height="43.0dip" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/container" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/top_bar_container" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <ImageView n1:id="@id/back_button_image" n1:background="@drawable/black_back" n1:layout_width="@dimen/activity_22px" n1:layout_height="@dimen/activity_35px" n1:layout_marginLeft="@dimen/activity_62px" n1:layout_marginRight="@dimen/activity_38px" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:id="@id/back_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/back" n1:layout_toRightOf="@id/back_button_image" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff000000" n1:id="@id/title_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@null" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/top_bar_container">
+        <FrameLayout n1:id="@id/fragment_container" n1:background="#fff0f1f2" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#ffd8d5c0" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff161616" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="채팅" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/new_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_76px" n1:text="추가" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+    </RelativeLayout>
+    <View n1:background="#ff939597" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+    <ListView n1:id="@android:id/list" n1:background="#ffffffff" n1:focusable="false" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:drawSelectorOnTop="false" />
+</LinearLayout>

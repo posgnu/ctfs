@@ -1,7 +1,8 @@
 from pwn import *
-p = remote('211.117.60.76',8888)
-#elf = ELF('./catshop')
-#context(terminal = ['xterm', 'splitw'])
+#p = remote('211.117.60.76',8888)
+elf = ELF('./catshop')
+context(terminal = ['xterm', 'splitw'])
+p = process('catshop')
 #gdb = attach(p)
 
 p.send(p32(1))

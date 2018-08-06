@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="50.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:id="@id/selected_container" n1:visibility="visible" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:id="@id/img_current_channel" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="12.0dip" n1:src="@drawable/ic_launcher" n1:scaleType="centerCrop" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ffd9d9d9" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    <LinearLayout n1:orientation="horizontal" n1:paddingLeft="12.0dip" n1:paddingRight="12.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/img_thumbnail" n1:layout_width="36.0dip" n1:layout_height="36.0dip" n1:layout_marginRight="8.0dip" n1:src="@drawable/ic_launcher" n1:scaleType="centerCrop" />
+        <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+            <TextView n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="#ff414858" n1:id="@id/txt_topic" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="File Name" n1:singleLine="true" />
+            <TextView n1:textSize="12.0sp" n1:textColor="#ffa6b0ba" n1:id="@id/txt_desc" n1:paddingRight="20.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="Description" n1:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

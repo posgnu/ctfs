@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/top_bar" n1:background="#fff9f9f9" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/back_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_76px" n1:text="뒤로" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff161616" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/setting" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+    <LinearLayout n1:background="#fff1f1f2" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff404041" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_80px" n1:layout_marginTop="@dimen/activity_100px" n1:layout_marginBottom="@dimen/activity_45px" n1:text="알림 설정" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/activity_80px" n1:paddingTop="@dimen/activity_48px" n1:paddingRight="@dimen/activity_80px" n1:paddingBottom="@dimen/activity_48px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="푸시 알림" />
+            <LinearLayout n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ToggleButton n1:textSize="@dimen/font_36px" n1:id="@id/push_toggle_button" n1:paddingTop="@dimen/activity_20px" n1:layout_width="@dimen/activity_200px" n1:layout_height="@dimen/activity_120px" n1:layout_margin="0.0dip" n1:textOn="ON" n1:textOff="OFF" />
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:background="#ff404041" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" n1:layout_marginLeft="@dimen/activity_80px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/activity_80px" n1:paddingTop="@dimen/activity_48px" n1:paddingRight="@dimen/activity_80px" n1:paddingBottom="@dimen/activity_48px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="피드 알림" />
+            <LinearLayout n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ToggleButton n1:textSize="@dimen/font_36px" n1:id="@id/feed_toggle_button" n1:paddingTop="@dimen/activity_20px" n1:layout_width="@dimen/activity_200px" n1:layout_height="@dimen/activity_120px" n1:layout_margin="0.0dip" n1:textOn="ON" n1:textOff="OFF" />
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:background="#ff404041" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" n1:layout_marginLeft="@dimen/activity_80px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:paddingLeft="@dimen/activity_80px" n1:paddingTop="@dimen/activity_48px" n1:paddingRight="@dimen/activity_80px" n1:paddingBottom="@dimen/activity_48px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="댓글 알림" />
+            <LinearLayout n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ToggleButton n1:textSize="@dimen/font_36px" n1:id="@id/reply_toggle_button" n1:paddingTop="@dimen/activity_20px" n1:layout_width="@dimen/activity_200px" n1:layout_height="@dimen/activity_120px" n1:layout_margin="0.0dip" n1:textOn="ON" n1:textOff="OFF" />
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:background="#ff404041" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+    </LinearLayout>
+    <View n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_45px" />
+    <LinearLayout n1:background="#fff1f1f2" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff404041" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_80px" n1:layout_marginTop="@dimen/activity_100px" n1:layout_marginBottom="@dimen/activity_45px" n1:text="계정 설정" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/logout_button_linear" n1:paddingLeft="@dimen/activity_80px" n1:paddingTop="@dimen/activity_48px" n1:paddingRight="@dimen/activity_80px" n1:paddingBottom="@dimen/activity_48px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="로그아웃" />
+            <LinearLayout n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:background="#ff404041" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" n1:layout_marginLeft="@dimen/activity_80px" />
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/unregister_button_linear" n1:paddingLeft="@dimen/activity_80px" n1:paddingTop="@dimen/activity_48px" n1:paddingRight="@dimen/activity_80px" n1:paddingBottom="@dimen/activity_48px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="서비스 탈퇴" />
+            <LinearLayout n1:gravity="right" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View n1:background="#ff404041" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:id="@id/detail_feed_fragment" n1:background="#ffffffff" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/title_relative" n1:background="#fff9f9f9" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <LinearLayout n1:gravity="center_vertical" n1:id="@id/back_button_linear" n1:layout_width="wrap_content" n1:layout_height="fill_parent" n1:layout_alignParentLeft="true">
+            <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/back_button_image" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_76px" n1:text="뒤로" n1:contentDescription="@null" />
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/news_feed" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/modify_button" n1:background="#00000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_76px" n1:text="편집" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ffd8d8d8" n1:layout_width="fill_parent" n1:layout_height="1.0dip" n1:layout_below="@id/title_relative" />
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:fillViewport="true" n1:layout_below="@id/title_relative" n1:layout_alignParentBottom="true">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_60px" n1:layout_marginTop="@dimen/activity_57px" n1:layout_marginRight="@dimen/activity_80px">
+                <FrameLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <com.mikhaellopez.circularimageview.CircularImageView n1:id="@id/profile_image" n1:background="@drawable/visitor_circle" n1:layout_width="@dimen/activity_280px" n1:layout_height="@dimen/activity_280px" n1:layout_marginRight="@dimen/activity_30px" n1:src="@drawable/info_profile" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <ImageView n1:layout_gravity="bottom|center|right" n1:id="@id/iv_badge" n1:layout_width="25.0dip" n1:layout_height="25.0dip" />
+                </FrameLayout>
+                <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="@dimen/activity_40px" n1:layout_marginTop="@dimen/activity_16px" n1:layout_weight="1.0">
+                    <LinearLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                        <TextView n1:textSize="@dimen/font_55px" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_5px" n1:text="" />
+                        <TextView n1:textSize="@dimen/font_40px" n1:textColor="#ff000000" n1:id="@id/office_name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_30px" n1:text="" />
+                    </LinearLayout>
+                    <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff000000" n1:id="@id/company_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" />
+                    <TextView n1:textSize="@dimen/font_35px" n1:textColor="#ffa7a9ab" n1:id="@id/date_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip" n1:layout_marginBottom="@dimen/activity_12px" n1:text="" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView n1:textSize="15.0sp" n1:textColor="#ff000000" n1:ellipsize="marquee" n1:id="@id/content_text" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_45px" n1:layout_marginTop="@dimen/activity_52px" n1:layout_marginRight="@dimen/activity_45px" n1:text="" n1:layout_weight="1.0" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/ll_hashtag" n1:background="#ffffffff" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_45px" n1:layout_marginTop="@dimen/activity_52px" n1:layout_marginBottom="@dimen/activity_70px">
+                <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff2e3191" n1:ellipsize="end" n1:id="@id/tv_tag1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7.0dip" n1:text="@null" />
+                <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff2e3191" n1:ellipsize="end" n1:id="@id/tv_tag2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7.0dip" n1:text="@null" />
+                <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff2e3191" n1:ellipsize="end" n1:id="@id/tv_tag3" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7.0dip" n1:text="@null" />
+                <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff2e3191" n1:ellipsize="end" n1:id="@id/tv_tag4" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7.0dip" n1:text="@null" />
+                <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff2e3191" n1:ellipsize="end" n1:id="@id/tv_tag5" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="7.0dip" n1:text="@null" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/content_image_linear" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <ImageView n1:id="@id/content_image1" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:scaleType="fitCenter" />
+                <ImageView n1:id="@id/content_image2" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:scaleType="fitCenter" />
+                <ImageView n1:id="@id/content_image3" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:scaleType="fitCenter" />
+                <ImageView n1:id="@id/content_image4" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:scaleType="fitCenter" />
+                <ImageView n1:id="@id/content_image5" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/ll_url" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="10.0dip">
+                <View n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+                <TextView n1:textSize="15.0dip" n1:textColor="#ffa7a9ab" n1:ellipsize="end" n1:id="@id/tv_url_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:layout_marginTop="4.0dip" n1:text="@null" />
+                <TextView n1:textSize="15.0dip" n1:textColor="#ffa7a9ab" n1:ellipsize="end" n1:id="@id/tv_url" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="12.0dip" n1:layout_marginBottom="4.0dip" n1:text="@null" />
+                <View n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+            </LinearLayout>
+            <LinearLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_80px" n1:layout_marginTop="@dimen/activity_29px" n1:layout_marginBottom="3.0dip">
+                <LinearLayout n1:gravity="center_vertical" n1:id="@id/ll_like" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:baselineAligned="false">
+                    <ImageView n1:id="@id/iv_heart_like" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/heart_red" />
+                    <TextView n1:textSize="@dimen/font_40px" n1:textColor="#ff000000" n1:id="@id/tv_like" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_15px" n1:text="3" />
+                </LinearLayout>
+                <TextView n1:textSize="@dimen/font_40px" n1:textColor="#ff000000" n1:id="@id/tv_reply" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_45px" n1:text="댓글 3" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+            </LinearLayout>
+            <LinearLayout n1:id="@id/ll_member_list" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:layout_marginBottom="5.0dip">
+                <HorizontalScrollView n1:id="@id/member_list" n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="7.0dip" n1:layout_marginBottom="7.0dip" n1:fillViewport="true">
+                    <LinearLayout n1:orientation="horizontal" n1:id="@id/member_list_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                </HorizontalScrollView>
+            </LinearLayout>
+            <View n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+            <LinearLayout n1:orientation="vertical" n1:id="@id/reply_linear" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+            <LinearLayout n1:orientation="horizontal" n1:id="@id/write_reply_linear" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <FrameLayout n1:orientation="horizontal" n1:background="#fff0f0f2" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_weight="1.0">
+                    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="horizontal" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_15px" n1:layout_marginTop="2.0dip" n1:layout_marginRight="@dimen/activity_15px" n1:layout_marginBottom="2.0dip">
+                        <EditText n1:textSize="16.0sp" n1:textColor="#ff37434f" n1:textColorHint="#ff8e8e8f" n1:layout_gravity="center_vertical" n1:id="@id/reply_edittext" n1:background="@null" n1:paddingLeft="@dimen/activity_20px" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:focusable="true" n1:focusableInTouchMode="true" n1:clickable="true" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:maxLines="4" n1:layout_weight="1.0" n1:inputType="textMultiLine" />
+                        <LinearLayout n1:id="@id/delete_text_image" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                            <ImageView n1:layout_gravity="center" n1:background="@drawable/close" n1:layout_width="15.0dip" n1:layout_height="15.0dip" n1:layout_marginLeft="@dimen/activity_30px" n1:layout_marginRight="@dimen/activity_30px" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+                <LinearLayout n1:layout_width="wrap_content" n1:layout_height="fill_parent">
+                    <Button n1:textSize="16.0sp" n1:textColor="#ffffffff" n1:gravity="center" n1:id="@id/send_button_text" n1:background="#ffda964c" n1:layout_width="60.0dip" n1:layout_height="fill_parent" n1:text="쓰기" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

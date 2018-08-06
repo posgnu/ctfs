@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="0.0dip" n1:layout_weight="1.0">
+        <ListView n1:id="@id/list" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:transcriptMode="normal" />
+        <View n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="4.0dip" />
+    </FrameLayout>
+    <RelativeLayout n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_200px" n1:layout_alignParentBottom="true">
+        <View n1:background="#ffc5c5c5" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentTop="true" />
+        <LinearLayout n1:orientation="horizontal" n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="10.0dip" n1:layout_marginTop="8.0dip" n1:layout_marginRight="10.0dip" n1:layout_marginBottom="8.0dip" n1:minHeight="48.0dip">
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="32.0dip" n1:layout_height="32.0dip">
+                <ProgressBar n1:id="@id/progress_btn_upload" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+                <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/btn_upload" n1:background="#00000000" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:text="+" />
+            </LinearLayout>
+            <EditText n1:textSize="16.0sp" n1:textColor="#ff37434f" n1:gravity="center_vertical" n1:id="@id/etxt_message" n1:background="#ffffffff" n1:paddingLeft="8.0dip" n1:paddingRight="8.0dip" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="" n1:singleLine="true" n1:layout_weight="5.0" />
+            <Button n1:textSize="12.0sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/btn_send" n1:background="#ffffffff" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:text="전송" n1:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

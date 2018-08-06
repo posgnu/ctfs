@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:paddingLeft="12.0dip" n1:paddingTop="16.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ProgressBar n1:layout_width="wrap_content" n1:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small" />
+    <TextView n1:textSize="12.0sp" n1:textStyle="italic" n1:textColor="#ff9d9ba5" n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:id="@id/txt_message" n1:paddingLeft="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Typing Indicator" />
+</LinearLayout>

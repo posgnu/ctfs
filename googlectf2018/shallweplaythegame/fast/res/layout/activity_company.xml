@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:orientation="vertical" n1:fitsSystemWindows="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/top_bar" n1:background="#fff3f3f3" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/back_ibtn" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_76px" n1:text="뒤로" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff161616" n1:id="@id/top_company_name_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="패파 멤버스" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_below="@id/top_bar">
+        <View n1:id="@id/top_under_line" n1:background="#ffbbbbbb" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+        <ScrollView n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_below="@id/top_under_line">
+                <LinearLayout n1:orientation="horizontal" n1:paddingTop="10.0dip" n1:paddingBottom="10.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <com.mikhaellopez.circularimageview.CircularImageView n1:layout_gravity="center_vertical" n1:id="@id/logo_iv" n1:background="@drawable/visitor_circle" n1:layout_width="70.0dip" n1:layout_height="70.0dip" n1:layout_marginLeft="@dimen/activity_80px" n1:layout_marginRight="@dimen/activity_40px" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:layout_marginLeft="8.0dip">
+                        <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                            <TextView n1:textSize="16.0sp" n1:textStyle="bold" n1:textColor="#ff161616" n1:id="@id/company_name_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="company name" />
+                            <TextView n1:textSize="14.0sp" n1:id="@id/summary_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="summary" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View n1:background="#ffbbbbbb" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="90.0dip" n1:layout_marginLeft="@dimen/activity_80px" n1:weightSum="9.0">
+                    <LinearLayout n1:gravity="center_vertical" n1:orientation="vertical" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="4.0">
+                        <TextView n1:textSize="14.0sp" n1:textStyle="bold" n1:id="@id/ceo_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="ceo" />
+                        <TextView n1:textStyle="bold" n1:id="@id/room_name_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="room name" />
+                    </LinearLayout>
+                    <View n1:layout_gravity="center_vertical" n1:background="#ffbbbbbb" n1:layout_width="0.5dip" n1:layout_height="70.0dip" />
+                    <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="5.0">
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/homepage_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_76px">
+                            <ImageView n1:background="@drawable/company_homepage" n1:layout_width="50.0dip" n1:layout_height="50.0dip" />
+                            <TextView n1:textSize="14.0sp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="홈페이지" />
+                        </LinearLayout>
+                        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/phone_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                            <ImageView n1:background="@drawable/company_tel" n1:layout_width="50.0dip" n1:layout_height="50.0dip" />
+                            <TextView n1:textSize="14.0sp" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="대표번호" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <View n1:background="#ffbbbbbb" n1:layout_width="fill_parent" n1:layout_height="0.5dip" />
+                <ImageView n1:id="@id/logo_big_iv" n1:layout_width="fill_parent" n1:layout_height="300.0dip" n1:scaleType="fitXY" />
+                <View n1:id="@id/logo_big_iv_bot_bar" n1:background="#ff747474" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" n1:layout_marginBottom="10.0dip" />
+                <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="5.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="15.0dip">
+                    <TextView n1:textSize="13.0sp" n1:textStyle="bold" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_10px" n1:text="소개합니다!" />
+                    <TextView n1:textSize="13.0sp" n1:id="@id/content_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="상세내용" />
+                    <TextView n1:textSize="13.0sp" n1:textStyle="bold" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:layout_marginBottom="@dimen/activity_10px" n1:text="멤버들께 한마디!" />
+                    <TextView n1:textSize="13.0sp" n1:id="@id/talk_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="한마디" />
+                </LinearLayout>
+                <LinearLayout n1:orientation="vertical" n1:background="#fff4f4f4" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="12.0sp" n1:id="@id/member_cnt" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="15.0dip" n1:text="팀원소개(3)" />
+                    <HorizontalScrollView n1:scrollbarSize="0.0dip" n1:id="@id/member_list" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="7.0dip" n1:layout_marginBottom="20.0dip" n1:fillViewport="true">
+                        <LinearLayout n1:orientation="horizontal" n1:id="@id/member_list_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

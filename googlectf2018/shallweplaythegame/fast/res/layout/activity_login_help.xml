@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#fff1f1f2" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#ff161616" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <ImageView n1:id="@id/back_button_image" n1:background="@drawable/arrow_back" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_62px" n1:layout_marginRight="@dimen/activity_38px" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ffffffff" n1:id="@id/back_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/back" n1:layout_toRightOf="@id/back_button_image" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ffffffff" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_help_content1" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_103px" n1:layout_marginTop="@dimen/activity_89px" n1:text="@string/login_help_content2" />
+    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_103px" n1:layout_marginTop="@dimen/activity_6px" n1:layout_marginBottom="@dimen/activity_89px" n1:text="@string/login_help_content3" />
+    <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+    <RelativeLayout n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+        <ImageView n1:id="@id/number_image" n1:background="@drawable/phone_number" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_132px" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_40px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_60px" n1:text="@string/login_help_content4" n1:layout_toRightOf="@id/number_image" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/number_arrow_image" n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_75px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+    <RelativeLayout n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+        <ImageView n1:id="@id/email_image" n1:background="@drawable/email02" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_132px" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_40px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_60px" n1:text="@string/login_help_content5" n1:layout_toRightOf="@id/email_image" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/email_arrow_image" n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_75px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_103px" n1:layout_marginTop="@dimen/activity_89px" n1:layout_marginBottom="@dimen/activity_89px" n1:text="@string/login_help_content6" />
+    <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+    <RelativeLayout n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+        <ImageView n1:id="@id/etc_image" n1:background="@drawable/login_fastfive" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_132px" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_40px" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_60px" n1:text="@string/login_help_content7" n1:layout_toRightOf="@id/etc_image" n1:layout_centerVertical="true" />
+        <ImageView n1:id="@id/etc_arrow_image" n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_75px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+</LinearLayout>

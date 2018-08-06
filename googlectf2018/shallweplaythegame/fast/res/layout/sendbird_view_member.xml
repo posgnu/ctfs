@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:layout_width="fill_parent" n1:layout_height="76.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="#ffd9d9d9" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+    <LinearLayout n1:orientation="horizontal" n1:paddingLeft="12.0dip" n1:paddingRight="12.0dip" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageView n1:layout_gravity="center_vertical" n1:id="@id/img_thumbnail" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_marginRight="17.0dip" n1:src="@drawable/ic_launcher" n1:scaleType="centerCrop" />
+        <TextView n1:textSize="17.0sp" n1:textColor="#ff3d3d3d" n1:gravity="center_vertical" n1:layout_gravity="center_vertical" n1:id="@id/txt_name" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="Topic" n1:singleLine="true" n1:layout_weight="1.0" />
+        <TextView n1:textSize="10.0sp" n1:textColor="#ff8e8e8e" n1:gravity="center" n1:layout_gravity="center_vertical" n1:id="@id/txt_status" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:minHeight="50.0dip" n1:text="Online" />
+    </LinearLayout>
+    <View n1:background="#ffe4e4e4" n1:layout_width="fill_parent" n1:layout_height="1.0px" n1:layout_alignParentBottom="true" />
+</RelativeLayout>

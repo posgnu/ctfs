@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:id="@id/image_pager_frame" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:layout_gravity="center|left" n1:id="@id/left_button_image" n1:background="@drawable/arrow_left" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_45px" />
+        <ImageView n1:id="@id/content_image1" n1:layout_width="@dimen/activity_1350px" n1:layout_height="@dimen/activity_1350px" n1:scaleType="fitXY" />
+        <ImageView n1:layout_gravity="center|right" n1:id="@id/right_button_image" n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_45px" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout n1:paddingLeft="4.0dip" n1:paddingRight="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:id="@id/office_img" n1:background="@drawable/circle_people_bg" n1:layout_width="50.0dip" n1:layout_height="50.0dip" n1:layout_centerInParent="true" />
+    <TextView n1:textSize="12.0sp" n1:id="@id/office_nm_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="" n1:layout_centerInParent="true" />
+</RelativeLayout>

@@ -9,6 +9,7 @@ elf = ELF()
 if local:
 	libc = ELF()
 	p = process()
+        #gdb.attach(p)
 else:
 	libc = ELF()
 	p = remote()

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="@drawable/dialog_border" n1:layout_width="256.0dip" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:background="@drawable/dialog_title" n1:layout_width="fill_parent" n1:layout_height="48.0dip">
+        <TextView n1:textSize="18.0sp" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/tv_dialog_title" n1:layout_width="wrap_content" n1:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView n1:textSize="14.0sp" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/tv_dialog_msg" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="15.0dip" n1:layout_marginTop="25.0dip" n1:layout_marginRight="15.0dip" n1:layout_marginBottom="25.0dip" />
+    <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginBottom="10.0dip">
+        <Button n1:textSize="16.0sp" n1:id="@id/btn_dialog_cancel" n1:background="@drawable/dialog_cancel_button" n1:visibility="visible" n1:layout_width="wrap_content" n1:layout_height="35.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/cancel" />
+        <Button n1:textSize="16.0sp" n1:layout_gravity="center_horizontal" n1:id="@id/btn_dialog_confirm" n1:background="@drawable/dialog_confirm_button" n1:layout_width="wrap_content" n1:layout_height="35.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/ok" />
+        <Button n1:textSize="16.0sp" n1:layout_gravity="center_horizontal" n1:id="@id/btn_dialog_confirm2" n1:background="@drawable/dialog_confirm_button" n1:layout_width="167.0dip" n1:layout_height="35.0dip" n1:layout_marginLeft="20.0dip" n1:layout_marginRight="20.0dip" n1:text="@string/ok" />
+    </LinearLayout>
+</LinearLayout>

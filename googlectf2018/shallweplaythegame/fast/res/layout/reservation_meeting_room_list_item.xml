@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:background="#ffe5e5e5" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:id="@id/title_text" n1:paddingLeft="20.0dip" n1:paddingTop="6.0dip" n1:paddingBottom="6.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="서초" />
+    </LinearLayout>
+    <android.support.constraint.ConstraintLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:background="@android:color/black" n1:layout_width="0.0dip" n1:layout_height="0.0dip" n1:layout_marginTop="0.0dip" n2:layout_constraintDimensionRatio="H,200:100" n2:layout_constraintEnd_toEndOf="parent" n2:layout_constraintStart_toStartOf="parent" n2:layout_constraintTop_toTopOf="parent" xmlns:n2="http://schemas.android.com/apk/res-auto">
+            <ImageView n1:id="@id/image_frame" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:scaleType="centerCrop" />
+            <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                <ImageView n1:background="@drawable/arrow_right" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_87px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+            </RelativeLayout>
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

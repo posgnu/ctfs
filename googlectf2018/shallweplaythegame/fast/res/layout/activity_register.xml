@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:focusable="true" n1:focusableInTouchMode="true" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#fff9f9f9" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <ImageView n1:id="@id/back_button_image" n1:background="@drawable/arrow_back" n1:visibility="gone" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_62px" n1:layout_marginRight="@dimen/activity_38px" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/back_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_62px" n1:text="@string/back" n1:layout_toRightOf="@id/back_button_image" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/register_content1" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center" n1:background="#ffffffff" n1:paddingTop="@dimen/activity_145px" n1:paddingBottom="@dimen/activity_145px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <com.mikhaellopez.circularimageview.CircularImageView n1:id="@id/circle_profile_image" n1:visibility="gone" n1:layout_width="@dimen/activity_750px" n1:layout_height="@dimen/activity_750px" n1:src="@drawable/info_profile" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+                <ImageView n1:id="@id/profile_image" n1:background="@drawable/info_profile" n1:layout_width="@dimen/activity_750px" n1:layout_height="@dimen/activity_750px" />
+            </LinearLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_4px" />
+            <RelativeLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <TextView n1:textSize="@dimen/font_50px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content2" />
+                <EditText n1:textSize="@dimen/font_45px" n1:textColorHint="#ff939597" n1:layout_gravity="center" n1:id="@id/number_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:hint="@string/register_content3" n1:inputType="phone" />
+            </RelativeLayout>
+            <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <RelativeLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <TextView n1:textSize="@dimen/font_50px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content4" />
+                <EditText n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/pwd_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:inputType="textPassword" />
+            </RelativeLayout>
+            <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_4px" />
+            <RelativeLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <TextView n1:textSize="@dimen/font_50px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content5" />
+                <EditText n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/pwd_confirm_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_490px" n1:inputType="textPassword" />
+            </RelativeLayout>
+            <View n1:background="#ff707070" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <RelativeLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content6" />
+                <EditText n1:textSize="@dimen/font_45px" n1:textColorHint="#ff939597" n1:layout_gravity="center" n1:id="@id/name_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:hint="@string/register_content7" />
+            </RelativeLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                        <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content8" n1:layout_centerVertical="true" />
+                        <Spinner n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/year_spinner" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:drawSelectorOnTop="true" n1:prompt="@string/register_content9" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                        <ImageView n1:background="@drawable/arrow_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_23px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    </RelativeLayout>
+                    <View n1:background="#ff000000" n1:layout_width="@dimen/activity_1px" n1:layout_height="fill_parent" />
+                    <LinearLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                        <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                            <Spinner n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/month_spinner" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:drawSelectorOnTop="true" n1:prompt="@string/register_content10" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                            <ImageView n1:background="@drawable/arrow_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_23px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                        </RelativeLayout>
+                        <View n1:background="#ff000000" n1:layout_width="@dimen/activity_1px" n1:layout_height="fill_parent" />
+                        <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.0">
+                            <Spinner n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/day_spinner" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:drawSelectorOnTop="true" n1:prompt="@string/register_content11" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                            <ImageView n1:background="@drawable/arrow_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_90px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.1">
+                    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content12" n1:layout_centerVertical="true" />
+                    <Spinner n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/office_spinner" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:drawSelectorOnTop="true" n1:prompt="@string/register_content13" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <ImageView n1:background="@drawable/arrow_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_23px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View n1:background="#ff000000" n1:layout_width="@dimen/activity_1px" n1:layout_height="fill_parent" />
+                <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="0.9">
+                    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/room_name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content13" n1:layout_centerVertical="true" />
+                    <Spinner n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/room_name_spinner" n1:background="@null" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:drawSelectorOnTop="true" n1:prompt="@string/register_content13" n1:layout_toRightOf="@id/room_name_text" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                    <ImageView n1:background="@drawable/arrow_down" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_90px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <RelativeLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content14" />
+                <EditText n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/email_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:hint="@string/register_content14" n1:inputType="textEmailAddress" />
+            </RelativeLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <LinearLayout n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_148px">
+                <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="1.1">
+                    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content15" n1:layout_centerVertical="true" />
+                    <EditText n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/office_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:hint="@string/register_content15" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+                <View n1:background="#ff000000" n1:layout_width="@dimen/activity_1px" n1:layout_height="fill_parent" />
+                <RelativeLayout n1:orientation="horizontal" n1:layout_width="0.0dip" n1:layout_height="fill_parent" n1:layout_weight="0.9">
+                    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/job_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content16" n1:layout_centerVertical="true" />
+                    <EditText n1:textSize="@dimen/font_45px" n1:layout_gravity="center" n1:id="@id/job_edittext" n1:background="@null" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_23px" n1:hint="@string/register_content16" n1:layout_toRightOf="@id/job_text" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" />
+            <LinearLayout n1:gravity="top" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_220px">
+                <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+                    <TextView n1:textSize="@dimen/font_45px" n1:textStyle="bold" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_90px" n1:text="@string/register_content17" n1:layout_centerVertical="true" />
+                    <EditText n1:textSize="@dimen/font_45px" n1:textColorHint="#ff939597" n1:layout_gravity="center" n1:id="@id/introduce_edittext" n1:background="@null" n1:paddingTop="@dimen/activity_20px" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_390px" n1:hint="@string/register_content18" n1:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_1px" n1:layout_marginBottom="@dimen/activity_90px" />
+            <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:gravity="center" n1:id="@id/regist_button_text" n1:background="#ffcbcbcb" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_200px" n1:layout_marginLeft="100.0dip" n1:layout_marginRight="100.0dip" n1:layout_marginBottom="@dimen/activity_90px" n1:text="@string/register_content19" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

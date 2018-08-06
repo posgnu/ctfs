@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/top_bar" n1:background="#fff9f9f9" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff000000" n1:id="@id/back_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_76px" n1:text="뒤로" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff161616" n1:id="@id/title_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/my_profile" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" />
+    <ScrollView n1:scrollbars="none" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/my_profile_background" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+            <TextView n1:textSize="19.0sp" n1:textColor="#ff040407" n1:id="@id/company_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="30.0dip" n1:text="@null" />
+            <TextView n1:textSize="17.0dip" n1:textColor="#ff040401" n1:ellipsize="end" n1:layout_gravity="center_horizontal" n1:id="@id/introduce_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="15.0dip" n1:text="@null" n1:maxLines="3" />
+            <FrameLayout n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="90.0dip">
+                <com.mikhaellopez.circularimageview.CircularImageView n1:id="@id/circle_profile_image" n1:layout_width="@dimen/activity_400px" n1:layout_height="@dimen/activity_400px" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </FrameLayout>
+            <LinearLayout n1:gravity="center_horizontal" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip">
+                <ImageView n1:layout_gravity="bottom|center|right" n1:id="@id/iv_badge" n1:layout_width="25.0dip" n1:layout_height="25.0dip" />
+                <TextView n1:textSize="26.0sp" n1:textStyle="bold" n1:id="@id/name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="1.0dip" n1:text="@null" />
+                <TextView n1:textSize="18.0sp" n1:textColor="#ff161616" n1:layout_gravity="bottom" n1:id="@id/office_name_text" n1:paddingBottom="2.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="7.0dip" n1:text="@null" />
+            </LinearLayout>
+            <TextView n1:textSize="12.0sp" n1:textColor="#ff808284" n1:layout_gravity="center_horizontal" n1:id="@id/create_date" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="@null" />
+            <LinearLayout n1:layout_gravity="center_horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="62.0dip">
+                <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/ll_profile_edit" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="20.0dip">
+                    <FrameLayout n1:layout_width="70.0dip" n1:layout_height="70.0dip">
+                        <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/p_circle" />
+                        <ImageView n1:layout_gravity="center" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@mipmap/profile_modify" />
+                    </FrameLayout>
+                    <TextView n1:textSize="12.0sp" n1:textColor="#ff808284" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="수정" />
+                </LinearLayout>
+                <LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:id="@id/ll_logout" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="20.0dip">
+                    <FrameLayout n1:layout_width="70.0dip" n1:layout_height="70.0dip">
+                        <ImageView n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@drawable/p_circle" />
+                        <ImageView n1:layout_gravity="center" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:src="@mipmap/profile_logout" />
+                    </FrameLayout>
+                    <TextView n1:textSize="12.0sp" n1:textColor="#ff808284" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="12.0dip" n1:text="로그아웃" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/top_bar" n1:background="#fff9f9f9" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff161616" n1:id="@id/back_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_76px" n1:text="뒤로" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        <TextView n1:textSize="@dimen/font_48px" n1:textColor="#ff161616" n1:id="@id/reserv_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_76px" n1:text="@string/select_meeting_room_content2" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <TextView n1:textSize="@dimen/font_60px" n1:textColor="#ff161616" n1:id="@id/office_title_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/select_meeting_room_content1" n1:layout_alignBottom="@id/reserv_button_text" n1:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:textColor="#ff000000" n1:orientation="horizontal" n1:id="@id/date_button_relative" n1:background="#ffffffff" n1:paddingTop="@dimen/activity_55px" n1:paddingBottom="@dimen/activity_55px" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center" n1:orientation="horizontal" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_45px" n1:textColor="#ff000000" n1:id="@id/date_text" n1:background="#00f1f1f2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="2016년 4월 1일" />
+            <ImageView n1:layout_gravity="center" n1:background="@drawable/arrow_down" n1:layout_width="13.0dip" n1:layout_height="8.0dip" n1:layout_marginLeft="@dimen/activity_20px" n1:layout_marginTop="2.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView n1:id="@android:id/list" n1:background="#ffffffff" n1:focusable="false" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:drawSelectorOnTop="false" n1:divider="#ffffffff" />
+</LinearLayout>

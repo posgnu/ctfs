@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#fff7f8f6" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <ImageView n1:layout_gravity="center" n1:background="@drawable/splash" n1:layout_width="200.0dip" n1:layout_height="50.0dip" n1:layout_marginTop="@dimen/activity_700px" n1:layout_marginBottom="@dimen/activity_120px" />
+    <EditText n1:textSize="@dimen/font_30px" n1:textColor="#ff000000" n1:textColorHint="#ff000000" n1:layout_gravity="center" n1:id="@id/number_edittext" n1:background="@drawable/login_edit_background" n1:paddingLeft="@dimen/activity_30px" n1:paddingRight="@dimen/activity_75px" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_140px" n1:layout_marginLeft="@dimen/activity_188px" n1:layout_marginRight="@dimen/activity_188px" n1:layout_marginBottom="@dimen/activity_30px" n1:hint="@string/login_content1" n1:inputType="phone" />
+    <EditText n1:textSize="@dimen/font_30px" n1:textColor="#ff000000" n1:textColorHint="#ff000000" n1:layout_gravity="center" n1:id="@id/pwd_edittext" n1:background="@drawable/login_edit_background" n1:paddingLeft="@dimen/activity_30px" n1:paddingRight="@dimen/activity_75px" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_140px" n1:layout_marginLeft="@dimen/activity_188px" n1:layout_marginRight="@dimen/activity_188px" n1:layout_marginBottom="@dimen/activity_100px" n1:hint="@string/login_content2" n1:inputType="textPassword" />
+    <TextView n1:textSize="@dimen/font_40px" n1:textColor="#ff000000" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/login_button_text" n1:background="@drawable/login_button_background" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_140px" n1:layout_marginLeft="@dimen/activity_188px" n1:layout_marginRight="@dimen/activity_188px" n1:layout_marginBottom="@dimen/activity_25px" n1:text="@string/login_content3" />
+    <TextView n1:textSize="@dimen/font_28px" n1:textColor="#ff000000" n1:gravity="center" n1:layout_gravity="center" n1:id="@id/login_help_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_content4" />
+    <LinearLayout n1:gravity="bottom" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <LinearLayout n1:layout_gravity="center" n1:paddingBottom="15.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+            <TextView n1:textSize="@dimen/font_35px" n1:textColor="#ff000000" n1:id="@id/textView2" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_content6" />
+            <TextView n1:textSize="@dimen/font_35px" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/login_term_button_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="3.0dip" n1:text="@string/login_content7" />
+            <TextView n1:textSize="@dimen/font_35px" n1:textColor="#ff000000" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@string/login_content8" />
+        </LinearLayout>
+        <TextView n1:textSize="@dimen/font_40px" n1:textStyle="bold" n1:textColor="#ffffffff" n1:gravity="center" n1:layout_gravity="bottom" n1:id="@id/register_button_text" n1:background="#fff1af31" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_200px" n1:text="@string/login_content5" />
+    </LinearLayout>
+</LinearLayout>

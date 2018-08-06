@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="#fff9f9f9" n1:padding="10.0dip" n1:layout_width="fill_parent" n1:layout_height="105.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <com.mikhaellopez.circularimageview.CircularImageView n1:layout_gravity="center_vertical" n1:id="@id/logo_iv" n1:background="@drawable/visitor_circle" n1:layout_width="77.0dip" n1:layout_height="77.0dip" n1:layout_marginLeft="10.0dip" n1:layout_marginRight="@dimen/activity_30px" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+    <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:paddingLeft="10.0dip" n1:layout_width="0.0dip" n1:layout_height="wrap_content" n1:layout_marginTop="8.0dip" n1:layout_weight="1.0">
+        <TextView n1:textSize="@dimen/font_48px" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/company_name_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="회사명" n1:layout_alignParentTop="true" />
+        <TextView n1:textSize="@dimen/font_42px" n1:textColor="#ff000000" n1:ellipsize="end" n1:id="@id/summary_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="1.0dip" n1:text="한줄소개" n1:maxLines="1" n1:layout_below="@id/company_name_tv" />
+        <TextView n1:textSize="@dimen/font_40px" n1:textColor="#ff808284" n1:id="@id/ceo_tv" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="5.0dip" n1:text="대표 어쩌구" n1:layout_alignParentBottom="true" />
+    </LinearLayout>
+    <LinearLayout n1:gravity="center|right" n1:layout_gravity="center|right" n1:orientation="vertical" n1:id="@id/modify_button_linear" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+        <TextView n1:textSize="10.0dip" n1:gravity="bottom" n1:layout_gravity="right" n1:id="@id/room_name_tv" n1:paddingBottom="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="room name" />
+        <LinearLayout n1:gravity="top" n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginTop="3.0dip">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/modify_button" n1:layout_width="18.0dip" n1:layout_height="5.0dip">
+                <ImageView n1:id="@id/modify_button_image" n1:background="@drawable/feed_more" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="horizontal" n1:background="#ffe5e5e5" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:id="@id/title_text" n1:paddingLeft="20.0dip" n1:paddingTop="5.0dip" n1:paddingBottom="5.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="회의실" />
+        <TextView n1:textSize="@dimen/font_50px" n1:textColor="#ff000000" n1:id="@id/count_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="2.0dip" n1:text=" (13)" />
+    </LinearLayout>
+    <RelativeLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <ImageButton n1:id="@id/delete" n1:background="#00000000" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="20.0dip" n1:src="@drawable/newsfeed_delete" n1:scaleType="fitCenter" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+        <LinearLayout n1:orientation="horizontal" n1:id="@id/content_linear" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:gravity="center" n1:orientation="vertical" n1:id="@id/type_linear" n1:background="@drawable/meetingroom_circle" n1:layout_width="@dimen/activity_250px" n1:layout_height="@dimen/activity_250px" n1:layout_marginLeft="@dimen/activity_153px" n1:layout_marginTop="@dimen/activity_30px" n1:layout_marginRight="@dimen/activity_105px" n1:layout_marginBottom="@dimen/activity_30px">
+                <TextView n1:textSize="13.0sp" n1:textColor="#ffffffff" n1:id="@id/date_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="4월 5일" />
+            </LinearLayout>
+            <LinearLayout n1:layout_gravity="center_vertical" n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:textSize="14.0sp" n1:id="@id/detail_date_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_20px" n1:text="4월 5일" n1:layout_centerVertical="true" />
+                <TextView n1:textSize="14.0sp" n1:id="@id/detail_address_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="13:00" n1:layout_centerVertical="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

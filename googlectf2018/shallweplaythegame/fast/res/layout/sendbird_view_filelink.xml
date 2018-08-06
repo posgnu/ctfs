@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:paddingLeft="18.0dip" n1:paddingTop="6.0dip" n1:paddingRight="18.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="44.0dip"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <FrameLayout n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <ImageView n1:id="@id/img_op_icon" n1:paddingTop="3.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:src="@drawable/ic_launcher" />
+        <TextView n1:textSize="14.0sp" n1:textColor="#ff595959" n1:autoLink="web" n1:id="@id/txt_sender_name" n1:paddingBottom="4.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:text="Lorem Ipsum text: " />
+    </FrameLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/img_file_container" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <View n1:background="#22000000" n1:layout_width="3.0dip" n1:layout_height="fill_parent" n1:layout_marginRight="8.0dip" />
+        <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:id="@id/file_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="horizontal" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="10.0sp" n1:textColor="#ff595959" n1:id="@id/txt_file_name" n1:paddingRight="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="File Name" n1:singleLine="true" n1:layout_toRightOf="@id/img_file_icon" />
+                    <TextView n1:textSize="10.0sp" n1:textColor="#ff595959" n1:id="@id/txt_file_size" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0.99MB" n1:singleLine="true" />
+                </LinearLayout>
+                <ImageView n1:id="@id/img_file_icon" n1:paddingTop="4.0dip" n1:layout_width="128.0dip" n1:layout_height="128.0dip" n1:layout_marginRight="8.0dip" n1:src="@drawable/ic_launcher" n1:scaleType="fitXY" n1:layout_alignParentLeft="true" />
+            </LinearLayout>
+            <LinearLayout n1:orientation="vertical" n1:id="@id/image_container" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                <LinearLayout n1:orientation="horizontal" n1:paddingTop="4.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content">
+                    <TextView n1:textSize="10.0sp" n1:textColor="#ff595959" n1:id="@id/txt_image_name" n1:paddingRight="8.0dip" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="File Name" n1:singleLine="true" />
+                    <TextView n1:textSize="10.0sp" n1:textColor="#ff595959" n1:id="@id/txt_image_size" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="0.99MB" n1:singleLine="true" />
+                </LinearLayout>
+                <ImageView n1:id="@id/img_thumbnail" n1:paddingTop="4.0dip" n1:layout_width="128.0dip" n1:layout_height="128.0dip" n1:src="@drawable/ic_launcher" n1:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

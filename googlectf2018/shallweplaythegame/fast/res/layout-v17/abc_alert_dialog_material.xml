@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:id="@id/parentPanel" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:id="@id/topPanel" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+        <LinearLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:id="@id/title_template" n1:paddingLeft="?dialogPreferredPadding" n1:paddingTop="@dimen/abc_dialog_padding_top_material" n1:paddingRight="?dialogPreferredPadding" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <ImageView n1:id="@android:id/icon" n1:layout_width="32.0dip" n1:layout_height="32.0dip" n1:src="@null" n1:scaleType="fitCenter" style="@style/RtlOverlay.Widget.AppCompat.DialogTitle.Icon" />
+            <android.support.v7.widget.DialogTitle n1:ellipsize="end" n1:id="@id/alertTitle" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:singleLine="true" n1:textAlignment="viewStart" style="?android:windowTitleStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout n1:id="@id/contentPanel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="48.0dip" n1:layout_weight="1.0">
+        <View n1:layout_gravity="top" n1:id="@id/scrollIndicatorUp" n1:background="?colorControlHighlight" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+        <android.support.v4.widget.NestedScrollView n1:id="@id/scrollView" n1:clipToPadding="false" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+                <TextView n1:id="@android:id/message" n1:paddingLeft="?dialogPreferredPadding" n1:paddingTop="@dimen/abc_dialog_padding_top_material" n1:paddingRight="?dialogPreferredPadding" n1:layout_width="fill_parent" n1:layout_height="wrap_content" style="@style/TextAppearance.AppCompat.Subhead" />
+                <View n1:id="@id/textSpacerNoButtons" n1:visibility="gone" n1:layout_width="0.0dip" n1:layout_height="@dimen/abc_dialog_padding_top_material" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <View n1:layout_gravity="bottom" n1:id="@id/scrollIndicatorDown" n1:background="?colorControlHighlight" n1:visibility="gone" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    </FrameLayout>
+    <FrameLayout n1:id="@id/customPanel" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="48.0dip" n1:layout_weight="1.0">
+        <FrameLayout n1:id="@id/custom" n1:layout_width="fill_parent" n1:layout_height="wrap_content" />
+    </FrameLayout>
+    <include layout="@layout/abc_alert_dialog_button_bar_material" />
+</LinearLayout>

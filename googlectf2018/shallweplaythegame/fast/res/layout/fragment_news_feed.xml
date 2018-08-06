@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <LinearLayout n1:orientation="vertical" n1:background="#ffe6e7e8" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <RelativeLayout n1:gravity="center_vertical" n1:orientation="horizontal" n1:background="#fffafafa" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_198px">
+            <ImageView n1:background="@drawable/fastfive" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_centerHorizontal="true" n1:layout_centerVertical="true" />
+            <ImageView n1:id="@id/new_button_image" n1:background="@drawable/newsfeed_new" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="@dimen/activity_76px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+            <ImageView n1:id="@id/search_button_image" n1:background="@drawable/newsfeed_search" n1:layout_width="18.0dip" n1:layout_height="18.0dip" n1:layout_marginLeft="17.0dip" n1:layout_alignParentLeft="true" n1:layout_centerVertical="true" n1:contentDescription="@null" />
+        </RelativeLayout>
+        <LinearLayout n1:orientation="vertical" n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="wrap_content">
+            <android.support.design.widget.AppBarLayout n1:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" n1:background="#fff0edee" n1:layout_width="fill_parent" n1:layout_height="40.0dip">
+                <android.support.design.widget.TabLayout n1:id="@id/tabs" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n2:tabIndicatorColor="#ffff9f27" n2:tabIndicatorHeight="1.5dip" n2:tabMaxWidth="@dimen/activity_200px" n2:tabMinWidth="@dimen/activity_140px" n2:tabMode="scrollable" n2:tabPaddingBottom="0.0dip" n2:tabPaddingEnd="0.0dip" n2:tabPaddingStart="0.0dip" n2:tabPaddingTop="0.0dip" n2:tabSelectedTextColor="@android:color/black" n2:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" n2:tabTextColor="@android:color/darker_gray" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            </android.support.design.widget.AppBarLayout>
+            <FrameLayout n1:id="@id/news_feed_fragment" n1:background="#fffefefe" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+        </LinearLayout>
+        <View n1:background="#ffe9e6e7" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_4px" />
+    </LinearLayout>
+    <LinearLayout n1:orientation="horizontal" n1:id="@id/child_fragment" n1:layout_width="fill_parent" n1:layout_height="fill_parent" />
+</FrameLayout>

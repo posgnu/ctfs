@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <RelativeLayout n1:gravity="center_vertical" n1:id="@id/title_relative" n1:background="#ffe6e7e8" n1:paddingLeft="@dimen/activity_87px" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_110px">
+        <TextView n1:textSize="@dimen/font_36px" n1:textColor="#ff000000" n1:id="@id/title_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="@null" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout n1:id="@id/content_relative" n1:layout_width="fill_parent" n1:layout_height="fill_parent">
+        <FrameLayout n1:id="@id/fl_profile" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="@dimen/activity_100px" n1:layout_marginTop="@dimen/activity_62px" n1:layout_marginRight="@dimen/activity_82px" n1:layout_marginBottom="@dimen/activity_62px" n1:layout_centerVertical="true">
+            <com.mikhaellopez.circularimageview.CircularImageView n1:id="@id/profile_image" n1:background="@drawable/visitor_circle" n1:layout_width="@dimen/activity_280px" n1:layout_height="@dimen/activity_280px" n1:src="@drawable/info_profile" n2:civ_border_color="#ffffffff" n2:civ_border_width="0.0dip" n2:civ_shadow="false" n2:civ_shadow_color="#ffffffff" n2:civ_shadow_radius="10.0" xmlns:n2="http://schemas.android.com/apk/res-auto" />
+            <ImageView n1:layout_gravity="bottom|center|right" n1:id="@id/iv_badge" n1:layout_width="20.0dip" n1:layout_height="20.0dip" n1:layout_marginRight="@dimen/activity_25px" n1:layout_marginBottom="@dimen/activity_10px" />
+        </FrameLayout>
+        <LinearLayout n1:orientation="vertical" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_toRightOf="@id/fl_profile" n1:layout_centerVertical="true">
+            <TextView n1:textSize="@dimen/font_52px" n1:textStyle="bold" n1:textColor="#ff000000" n1:id="@id/name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_32px" n1:text="Si Jin Yoo" />
+            <TextView n1:textSize="@dimen/font_36px" n1:textColor="#ff000000" n1:id="@id/office_name_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginBottom="@dimen/activity_10px" n1:text="서초" />
+            <TextView n1:textSize="@dimen/font_36px" n1:textColor="#ff000000" n1:id="@id/company_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="디자이너, 패스트파이브" />
+        </LinearLayout>
+        <ImageView n1:id="@id/iv_check" n1:background="@drawable/member_check1" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginRight="@dimen/activity_82px" n1:layout_alignParentRight="true" n1:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

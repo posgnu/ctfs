@@ -1,0 +1,11 @@
+dic = {}
+ObjectSpace.each_object(String) {|x| dic[x] = x.object_id; puts x}
+puts dic
+
+strid = dic["/home/p31338/flag"]
+puts strid
+
+#a = ObjectSpace._id2ref(strid)
+#puts a.tainted?
+#File.read(a)
+

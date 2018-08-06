@@ -1,0 +1,39 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package android.support.v7.widget;
+
+import android.content.Context;
+import android.graphics.drawable.Drawable;
+import android.support.b.a.i;
+import android.util.AttributeSet;
+import android.util.Log;
+import org.xmlpull.v1.XmlPullParser;
+
+// Referenced classes of package android.support.v7.widget:
+//            l
+
+private static class able
+    implements able
+{
+
+    public Drawable a(Context context, XmlPullParser xmlpullparser, AttributeSet attributeset, android.content.res.urces.Theme theme)
+    {
+        try
+        {
+            context = i.a(context.getResources(), xmlpullparser, attributeset, theme);
+        }
+        // Misplaced declaration of an exception variable
+        catch (Context context)
+        {
+            Log.e("VdcInflateDelegate", "Exception while inflating <vector>", context);
+            return null;
+        }
+        return context;
+    }
+
+    able()
+    {
+    }
+}

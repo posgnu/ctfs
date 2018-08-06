@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="vertical" n1:background="#ffe9e8ea" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <View n1:background="#ffffffff" n1:layout_width="fill_parent" n1:layout_height="1.0dip" />
+    <ListView n1:id="@id/list" n1:background="#ffffffff" n1:focusable="false" n1:descendantFocusability="afterDescendants" n1:layout_width="fill_parent" n1:layout_height="fill_parent" n1:drawSelectorOnTop="false" />
+</LinearLayout>

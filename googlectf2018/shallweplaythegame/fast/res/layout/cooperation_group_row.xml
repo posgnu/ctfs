@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout n1:orientation="horizontal" n1:background="#ffffffff" n1:paddingLeft="12.0dip" n1:paddingTop="@dimen/activity_62px" n1:paddingRight="12.0dip" n1:paddingBottom="@dimen/activity_62px" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
+  xmlns:n1="http://schemas.android.com/apk/res/android">
+    <TextView n1:textSize="@dimen/font_42px" n1:textStyle="bold" n1:id="@id/title_text" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="테스트" />
+    <TextView n1:textSize="@dimen/activity_35px" n1:textColor="#ff777777" n1:gravity="bottom" n1:id="@id/notice_date" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:layout_marginLeft="8.0dip" n1:text="날짜테스트" />
+</LinearLayout>

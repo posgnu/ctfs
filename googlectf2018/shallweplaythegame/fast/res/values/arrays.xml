@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="day">
+        <item>-</item>
+        <item>01 일</item>
+        <item>02 일</item>
+        <item>03 일</item>
+        <item>04 일</item>
+        <item>05 일</item>
+        <item>06 일</item>
+        <item>07 일</item>
+        <item>08 일</item>
+        <item>09 일</item>
+        <item>10 일</item>
+        <item>11 일</item>
+        <item>12 일</item>
+        <item>13 일</item>
+        <item>14 일</item>
+        <item>15 일</item>
+        <item>16 일</item>
+        <item>17 일</item>
+        <item>18 일</item>
+        <item>19 일</item>
+        <item>20 일</item>
+        <item>21 일</item>
+        <item>22 일</item>
+        <item>23 일</item>
+        <item>24 일</item>
+        <item>25 일</item>
+        <item>26 일</item>
+        <item>27 일</item>
+        <item>28 일</item>
+        <item>29 일</item>
+        <item>30 일</item>
+        <item>31 일</item>
+    </string-array>
+    <string-array name="month">
+        <item>-</item>
+        <item>01 월</item>
+        <item>02 월</item>
+        <item>03 월</item>
+        <item>04 월</item>
+        <item>05 월</item>
+        <item>06 월</item>
+        <item>07 월</item>
+        <item>08 월</item>
+        <item>09 월</item>
+        <item>10 월</item>
+        <item>11 월</item>
+        <item>12 월</item>
+    </string-array>
+    <string-array name="newsfeedcategory">
+        <item>뉴스피드</item>
+        <item>구인구직</item>
+        <item>불편신고 (Help)</item>
+    </string-array>
+    <string-array name="year">
+        <item>-</item>
+        <item>2000 년</item>
+        <item>1999 년</item>
+        <item>1998 년</item>
+        <item>1997 년</item>
+        <item>1996 년</item>
+        <item>1995 년</item>
+        <item>1994 년</item>
+        <item>1993 년</item>
+        <item>1992 년</item>
+        <item>1991 년</item>
+        <item>1990 년</item>
+        <item>1989 년</item>
+        <item>1988 년</item>
+        <item>1987 년</item>
+        <item>1986 년</item>
+        <item>1985 년</item>
+        <item>1984 년</item>
+        <item>1983 년</item>
+        <item>1982 년</item>
+        <item>1981 년</item>
+        <item>1980 년</item>
+        <item>1979 년</item>
+        <item>1978 년</item>
+        <item>1977 년</item>
+        <item>1976 년</item>
+        <item>1975 년</item>
+        <item>1974 년</item>
+        <item>1973 년</item>
+        <item>1972 년</item>
+        <item>1971 년</item>
+        <item>1970 년</item>
+        <item>1969 년</item>
+        <item>1968 년</item>
+        <item>1967 년</item>
+        <item>1966 년</item>
+        <item>1965 년</item>
+        <item>1964 년</item>
+        <item>1963 년</item>
+        <item>1962 년</item>
+        <item>1961 년</item>
+        <item>1960 년</item>
+    </string-array>
+</resources>
