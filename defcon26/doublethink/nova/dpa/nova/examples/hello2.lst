@@ -1,0 +1,52 @@
+01              	.titl hello
+02              	; a "hello, world" program for Nova running RDOS
+03              	; using PCHAR system call
+04              	.nrel
+05              	.ent start
+06              
+07              start:	
+08 00000'022424 dochar:	lda 0,@pmsg	; load ac0 with next word (2 chars)
+08 00001'101015 	mov# 0,0,snr
+09              	; test ac0
+10 00002'000412 	 jmp done ; skipped if nonzero
+11 00003'006017 	.systm
+12 00004'010000 	.pchar		; print first
+13 00005'000413 	 jmp er	; skipped if OK
+14 00006'101300 	movs 0,0	; swap bytes
+15 00007'006017 	.systm
+16 00010'010000 	.pchar		; print second
+17 00011'000407 	 jmp er	; skipped if OK
+18 00012'010412 	isz pmsg	; point to next word
+19 00013'000765 	jmp dochar	; go around again
+20              
+21 00014'006017 done:	.systm		; normal exit
+22 00015'004400 	.rtn
+23 00016'000402 	 jmp er
+24 00017'063077 	halt
+25 00020'006017 er:	.systm		; error exit
+26 00021'006400 	.ertn
+27 00022'063077 	 halt
+28 00023'063077 	halt
+29              
+30 00024'000025'pmsg:	.+1	; address of first word of text
+31              	; note bytes are packed right-to-left by default
+31 00025'062510 	.txt /Hello, world!<15><12>/ ; that's CR LF
+31       066154 
+31       026157 
+31       073440 
+31       071157 
+31       062154 
+31       006441 
+31       000012 
+31       000000 
+32              
+33 00036'000000 	0 ; flag word to end string
+34              	
+35              	.end start
+
+DOCHAR 000000'       1/159
+DONE   000014'       1/172
+ER     000020'       1/176
+HELLO  000000?       1/152
+PMSG   000024'       1/181
+START  000000' EN    1/158

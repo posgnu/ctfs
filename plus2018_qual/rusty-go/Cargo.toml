@@ -1,0 +1,7 @@
+[package]
+name = "rusty-go"
+version = "0.1.0"
+authors = ["Geunwoo Kim <posgnu@kodebox.io>"]
+
+[dependencies]
+rand = "0.5"

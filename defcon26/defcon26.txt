@@ -1,0 +1,64 @@
+
+OOO --- DEF CON CTF 2018
+A New Order for a New Era
+Cybercitizens, the Order of the Overflow welcomes you to DEF CON CTF 26!
+
+Remember, software vulnerabilities have been outlawed in the new Order. As a cybercitizen, the Order expects you to accomplish certain tasks, outlined below.
+
+The Network
+The Order strives to achieve simplicity in network connectivity. Plugging into the network, you will receive an Order-assigned network configuration. Violating these assignments will result in termination.
+
+The Team Interface
+The Order provides an interface for teams at http://10.100.0.2/. There is no need to authenticate: the Order knows all. This interface will provide the state of your services, information on how to patch them, and the status of your patches.
+
+The Game
+The game proceeds in ticks of a fixed time. At the beginning of a tick, new flags will be distributed to all services. Successful exploitation and redemption of this flag will increase your score and decrease the score of others (more on this below).
+
+Services
+To further your prosperity, the Order has developed not one, but two types of services: Attack/Defense and King of the Hill. The former format is familiar: you exploit other teams¡¯ services to steal their flags, and protect your own. King of the Hill is different: you compete against other teams for the best solution, which depends on the service in question.
+
+To attack a team¡¯s Attack/Defense service, connect to 10.13.37.X, where X is the victim team ID. To attempt a King of the Hill, connect to 10.13.37.Y, where Y is YOUR team ID.
+
+Services will go through a simple lifecycle, which is shown on the scoreboard. They begin their life as green, unexploited services. Once they are exploited, they become yellow. After significant exploitation of the service has occurred by several teams, or the service reaches a steady state, the service becomes orange and network traffic for the service will be released. A service will become red when it has been played out. After this, the Order may retire the service at any time. Inactive service might still be accessible for interested parties, but they will no longer be scored and no flags from them will be accepted. They will not re-activate.
+
+The Order would like you to spend less time ripping exploits off the wire, and more time hacking hard.
+
+Scoring
+Score takes into account three factors: attack points (earned by stealing flags from other teams¡¯ Attack/Defense services) will account for 40%, defense points (earned by resisting attacks against YOUR Attack/Defense services) will account for 40%, and KoH points (earned by top solutions of King of the Hill challenges) will account for 20%.
+
+Note that there is no ¡°SLA¡± or ¡°uptime¡± here.
+
+Defense points accumulate by 1 for each of your services that is unexploited in a tick where successful exploits are launched.
+
+Attack points accumulate by 1 for each flag that you retrieve, except for your own.
+
+King of the Hill points depend on the quality of your solution. Each tick, all teams tied for first place will get 10 points. Teams tied for second will get 6, teams tied for third will get 3, teams tied for fourth will get 2, and teams tied for fifth will get 1. Other teams will not receive points. The Order encourages you to consider hacking harder.
+
+The three types of points are normalized (compared to the top performer in each category) to account for 40%, 40%, and 20% of the total points of a team, respectively.
+
+Patches
+The Order will not permit you to run broken services. To facilitate this, we have taken control of all service machines, and will manage them for you. Rejoice in acceptance.
+
+You will submit your patches for evaluation by the Order. If your patch does not pass functionality tests, it will not be deployed. If your patch somehow fails functionality tests after deployment, it will be reverted.
+
+The Order frowns upon automated superman defenses: no cybercitizen of a well-regulated society should have such capabilities. Most services will severely limit the files that can be patched, and the number of bytes that can be changed in these files.
+
+This is a new system, and the Order understands that abuse is possible. If the Order determines that you are abusing this privilege, we will revoke your patching privileges. The Order will maintain a ZERO TOLERANCE policy in this regard. If you are unsure, ask us.
+
+There is no patching for King of the Hill services.
+
+Restrictions
+The tranquility established by the Order is new, and there are growing pains in any new regime. If there are issues in our infrastructure, and you let us know, we will be grateful. If there are issues with our infrastructure, and you attack it, we will terminate you. We reserve the right to do so without warning or chance of appeal.
+
+If you DoS us or a service, whether via network overload or service interaction, we will terminate you without warning.
+
+If you tamper with the power or internet line to another team, we will terminate you without warning. This includes any plugs within reach of your table that you might accidentally unplug.
+
+The Order reserves the right to dispatch long-term (>1 year) bans.
+
+If you have questions, ask.
+
+1. object pronoun The people spoken, or written to, as an object.
+2. reflexive, now U.S. colloquial (To) yourselves, (to) yourself.
+3. object pronoun The person spoken to or written to, as an object. (Replacing thee; originally as a mark of respect.)
+ Definitions by Grammarly
