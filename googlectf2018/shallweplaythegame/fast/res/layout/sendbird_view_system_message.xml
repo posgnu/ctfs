@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:paddingLeft="18.0dip" n1:paddingTop="8.0dip" n1:paddingRight="18.0dip" n1:paddingBottom="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:textSize="12.0sp" n1:textColor="#ff747284" n1:gravity="center_vertical" n1:autoLink="web" n1:id="@id/txt_message" n1:background="#ffe3e3e3" n1:paddingLeft="8.0dip" n1:paddingRight="8.0dip" n1:layout_width="fill_parent" n1:layout_height="wrap_content" n1:minHeight="30.0dip" n1:text="Lorem ipsum dolor sit amet, consectetur" />
-</LinearLayout>

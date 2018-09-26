@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout n1:gravity="center_horizontal" n1:orientation="vertical" n1:background="@drawable/list_border" n1:padding="@dimen/activity_50px" n1:layout_width="fill_parent" n1:layout_height="fill_parent"
-  xmlns:n1="http://schemas.android.com/apk/res/android">
-    <TextView n1:id="@id/modify_button_text" n1:background="#ffffffff" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="수정" />
-    <View n1:background="#ff000000" n1:layout_width="fill_parent" n1:layout_height="@dimen/activity_2px" n1:layout_marginTop="@dimen/activity_20px" n1:layout_marginBottom="@dimen/activity_20px" />
-    <TextView n1:id="@id/delete_button_text" n1:background="#ffffffff" n1:layout_width="wrap_content" n1:layout_height="wrap_content" n1:text="삭제" />
-</LinearLayout>
