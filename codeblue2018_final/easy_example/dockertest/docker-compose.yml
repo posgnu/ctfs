@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  exploit:
+    image: registry.finals.ctf.codeblue.jp:5000/team05/sanity_check
+    depends_on:
+      - problem
+      - flag-submit
+    networks:
+      - network1
+  problem:
+    image: registry.finals.ctf.codeblue.jp:5000/problems/sanity_check
+    volumes:
+      - "./flag:/flag"
+    expose:
+      - "12345"
+    networks:
+      - network1
+  flag-submit:
+    image: registry.finals.ctf.codeblue.jp:5000/public/flag-submit
+    volumes:
+      - "./submitted-flag:/flag"
+    expose:
+      - "8080"
+    networks:
+      - network1
+
+networks:
+  network1:
+    internal: true
