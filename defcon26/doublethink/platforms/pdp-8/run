@@ -1,3 +1,0 @@
-#!/bin/bash -e
-
-python $SCRIPTDIR/drive_emu.py pdp-8 $1 $2 | pdp8 -q /dev/stdin
